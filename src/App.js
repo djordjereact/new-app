@@ -12,7 +12,7 @@ class App extends Component {
         otherState: 'some other value',
         showPersons: false
 
-    }
+    };
 
       nameChangedHandler = (event, id) => {
 
@@ -29,19 +29,19 @@ class App extends Component {
 
 
           this.setState({persons: persons})
-          }
+          };
 
       deletePersonHandler = (personIndex) => {
             //const persons = this.state.persons.slice();
             const persons = [...this.state.persons];
             persons.splice(personIndex, 1);
             this.setState({persons: persons})
-      }
+      };
 
         togglePersonsHandler = () => {
             const doesShow = this.state.showPersons;
             this.setState({showPersons: !doesShow});
-        }
+        };
 
       render () {
             const style = {
