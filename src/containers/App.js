@@ -45,19 +45,6 @@ class App extends Component {
         };
 
       render () {
-            const style = {
-                backgroundColor: 'green',
-                color: 'white',
-                font: 'inherit',
-                border: '1px solid blue',
-                padding: '8px',
-                cursor: 'pointer',
-                ':hover': {
-                    backgroundColor: 'lightgreen',
-                    color: 'black'
-                }
-            };
-
       let persons = null;
       if (this.state.showPersons) {
         persons = (
@@ -76,7 +63,7 @@ class App extends Component {
       return (
           <div className="App">
           <Cockpit
-          show={this.state.showPersons}
+          showPersons={this.state.showPersons}
           persons={this.state.persons}
           toggle={this.togglePersonsHandler}/>
               {persons}
