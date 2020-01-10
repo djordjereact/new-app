@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Cockpit.module.css';
 
-const cockpit = ( props ) => {
+const cockpit =  props  => {
     const addClasses = [];
     let btnClass = '';
     if(props.showPersons) {
